@@ -1,0 +1,23 @@
+{
+  "name": "greenatlas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./assets/css/style.css -o ./assets/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chukwujike/greenAtlas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chukwujike/greenAtlas/issues"
+  },
+  "homepage": "https://github.com/chukwujike/greenAtlas#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
