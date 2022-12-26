@@ -574,8 +574,27 @@ video {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
+body, html {
+  height: 100%;
+}
+
+.backg1 {
+  /* The image used */
+  background-image: url('/images/Earth1.png');
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .absolute{
   position: absolute;
+}
+
+.relative{
+  position: relative;
 }
 
 .left-6{
@@ -655,11 +674,6 @@ video {
   align-self: flex-end;
 }
 
-.bg-primary{
-  --tw-bg-opacity: 1;
-  background-color: rgb(32 56 84 / var(--tw-bg-opacity));
-}
-
 .bg-orange-400{
   --tw-bg-opacity: 1;
   background-color: rgb(251 146 60 / var(--tw-bg-opacity));
@@ -718,6 +732,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -763,6 +782,21 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:right-20{
+    right: 5rem;
+  }
+
+  .md\:backg2 {
+    /* The image used */
+    background-image: url('/images/Earth2.png');
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .md\:flex{
     display: flex;
   }
@@ -771,11 +805,22 @@ video {
     display: none;
   }
 
-  .md\:items-center{
-    align-items: center;
+  .md\:text-right{
+    text-align: right;
   }
 
-  .md\:justify-between{
-    justify-content: space-between;
+  .md\:text-7xl{
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }

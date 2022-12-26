@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="/assets/css/output.css" />
   </head>
   <body>
-    <main class="h-screen flex flex-col bg-primary">
+    <main class="h-screen flex flex-col backg1 md:backg2 ">
+      <nav>
         <div class="flex justify-between items-center px-8 pt-4"> 
         <h1 class="text-3xl">Green Atlas</h1>
 
@@ -41,17 +42,19 @@
         </div>
       </div>
       </nav>
-      <section class="h-full grid place-items-center">
-        <div class="text-center">
+
+      <section class="h-full grid place-items-center relative">
+        <div class="text-center md:text-right absolute md:right-20">
           <div class="space-y-6 text-white mb-8">
-            <h3 class="text-3xl">Let’s help you find the right energy source.</h3>
-            <h1 class="text-7xl">Wind, <span class="text-blue-600">Hydro</span> or <span class="text-orange-400">Solar</span>?</h1>
-            <p class="text-2xl">We’ll tell you whats best!</p>
+            <h3 class="md:text-3xl text-2xl">Let’s help you find the right energy source.</h3>
+            <h1 class="md:text-7xl text-5xl">Wind, <span class="text-blue-600">Hydro</span> or <span class="text-orange-400">Solar</span>?</h1>
+            <p class="md:text-2xl text-1xl">We’ll tell you whats best!</p>
           </div>
           <a href="#" class="btn bg-white text-black text-lg py-4 px-12">GET STARTED</a>
         </div>
       </section>
     </main>
+    
     <script src="/js/script.js"></script>
   </body>
 </html>
