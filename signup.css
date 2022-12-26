@@ -1,0 +1,45 @@
+body, html {
+    height: 100%;
+  }
+  
+.bg {
+  background-image: url('./images/image-1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  background-position: center;
+  align-items: center
+}
+
+form {
+  margin: 50.15px auto;
+  width: 50%;
+}
+
+input::placeholder {
+  font-size: 14px;
+  color: #111314;
+  margin-left: 20px;
+}
+
+input[type=email], input[type=password] {
+  width: 550px;
+  height: 40px;
+  margin-top: 20px
+}
+
+input[type=checkbox] {
+  margin-top: 10px;
+}
+
+.button1 {
+  background-color: #3FC254;
+  color: #ffffff;
+}
+
+.button2, .button3 {
+  background-color: transparent;
+  border-color: #3FC254;
+  color: #3FC254
+}
