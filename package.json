@@ -19,5 +19,8 @@
   "homepage": "https://github.com/chukwujike/greenAtlas#readme",
   "devDependencies": {
     "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "swiper": "^8.4.5"
   }
 }
