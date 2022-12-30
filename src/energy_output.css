@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }  
+
+
+nav {
+    margin: 0%;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid thin black;
+    z-index: 100;
+  }
+
+  li {
+    float: left;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F7F7F7;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  a:hover, .dropdown:hover .dropbtn {
+    color: #00FF7F;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  button{
+    border-radius: 5px;
+    background-color: transparent;
+    border: solid #00FF7F thin;
+    height: 40px;
+    width: 100px;
+  }
+
+  .card{
+    border: thin black 3px ;
+    margin-top: 100px;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 80%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    padding: 10px;
+  }
+
+  .card-image{
+    position: relative;
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    padding: 3px
+  }
+
+  .card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px 
+  }
+
+  
