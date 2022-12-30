@@ -5,43 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./energy_output.css" />
+    <link rel="stylesheet" href="../assets/css/output.css" />
   </head>
   <body>
-    <header>
-      
-      <nav>
-        <a href="http://" class="logo"><img src="../images/logo.png" alt="logo"></a>
-        <div class="dropdown">
-          <button class="dropbtn">
-            Energy Data
-          </button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
+    <nav class="sticky top-0 z-50">
+      <div class="flex justify-between items-center px-8 pt-4">
+        <div class="flex space-x-3">
+          <img src="/images/logo.png" class="w-8 h-8" />
+          <h1 class="text-3xl">Green Atlas</h1>
         </div>
-        <li><a href="" class="active">About</a></li>
-        <li><a href="">Community</a></li>
-        <button ><a href="">Sign up</a> </button>
-        <li><a href="">Login in</a></li>
-      </nav>
-    </header>
-    <div class="card">
-     <p>Energy sources being compared:</p>
-     <div>
-      <input type="checkbox" name="checkbox1" id="">
-      <label for="checkbox1">Wind</label>
-     </div>
-     <div>
-      <input type="checkbox" name="checkbox2" id="">
-      <label for="checkbox2">Hydro</label>
-     </div>
-     <div>
-      <input type="checkbox" name="checkbox3" id="">
-      <label for="checkbox3">Solar</label>
-     </div>
+
+        <ul class="hidden md:flex space-x-6 text-black">
+          <li>About</li>
+          <li>Community</li>
+          <li>Energy Data</li>
+        </ul>
+
+        <div class="hidden md:flex gap-x-6">
+          <a class="btn" href="#">Sign Up</a>
+          <a class="btn bg-orange-400" href="login.html">Login</a>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md hidden"
+        >
+          <a href="#">About</a>
+          <a href="#">Community</a>
+          <a href="#">Energy Data</a>
+        </div>
+      </div>
+    </nav>
+    <div class="top-card">
+      <p>Energy sources being compared:</p>
+      <div>
+        <input type="checkbox" name="checkbox1" id="" />
+        <label for="checkbox1">Wind</label>
+      </div>
+      <div>
+        <input type="checkbox" name="checkbox2" id="" />
+        <label for="checkbox2">Hydro</label>
+      </div>
+      <div>
+        <input type="checkbox" name="checkbox3" id="" />
+        <label for="checkbox3">Solar</label>
+      </div>
     </div>
 
     <div class="slid-container">
@@ -49,29 +70,21 @@
         <div class="card-wrapper">
           <div class="card">
             <div class="image-content">
-              <span class="overlay">
-
-              </span>
+              <span class="overlay"> </span>
 
               <div class="card-image">
-                <img src="../images/house1.jpg" alt="">
+                <img src="../images/house1.jpg" alt="" />
               </div>
             </div>
 
             <div class="card-content">
-              <h2 class="name">
-                Small Residential Home
-              </h2>
-              <p class="description">
-                House below 1200 sq. feet
-              </p>
+              <h2 class="name">Small Residential Home</h2>
+              <p class="description">House below 1200 sq. feet</p>
+              <button class="card-button" type="submit">Choose</button>
             </div>
-
           </div>
         </div>
       </div>
     </div>
-     
-     
   </body>
 </html>
