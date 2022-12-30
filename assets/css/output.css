@@ -1178,6 +1178,7 @@ body,
 }
 
 .image-content{
+  position: relative;
   row-gap: 5px;
 }
 
@@ -1193,6 +1194,9 @@ body,
   border: solid black 1px;
   border-radius: 10px;
   padding: 5px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .card-button:hover{
@@ -1207,6 +1211,15 @@ body,
 .description{
   font-size: 14px;
   text-align: center;
+}
+
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
 }
 
 @media (min-width: 640px){
